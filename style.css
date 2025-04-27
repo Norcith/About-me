@@ -29,7 +29,6 @@ h1 {
   background-color: white;
   color: black;
   text-decoration: none;
-  transition-duration: 0.3s;
 
   border-style: solid;
   border-radius: 25px;
@@ -44,7 +43,12 @@ h1 {
   margin-right: 32%;
 }
 
-.button i {
+.button_animate {
+  transition-duration: 0.3s;
+
+}
+
+.button_animate i {
   position: absolute;
 
   transform: scaleX(0);
@@ -52,7 +56,7 @@ h1 {
   transition: 0s ease;
 }
 
-.button:hover i {
+.button_animate:hover i {
   transform: scaleX(1);
   position: static;
   transition: transform 0.3s ease;
