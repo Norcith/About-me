@@ -1,0 +1,59 @@
+body {
+  background-image: url("./assets/grid.png");
+  background-attachment: fixed;
+  font-family: sans-serif;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 25px;
+}
+
+.subtitle {
+  font-size: 25px;
+}
+
+.div_left {
+  margin: 12% 12% 0px;
+  text-align: start;
+}
+
+.div_right {
+  margin: 12% 12% 88% 0;
+  text-align: end;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.3s;
+
+  border-style: solid;
+  border-radius: 25px;
+  padding: 8px 10px;
+}
+
+.button_left {
+  margin-left: 43%;
+}
+
+.button_right {
+  margin-right: 32%;
+}
+
+.button i {
+  position: absolute;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0s ease;
+}
+
+.button:hover i {
+  transform: scaleX(1);
+  position: static;
+  transition: transform 0.3s ease;
+}
